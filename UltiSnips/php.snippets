@@ -1,0 +1,63 @@
+snippet tabs "Bootstrap Tabs" !b
+<!-- {{{ Start tabs -->
+<ul class="nav nav-tabs" id="$1">
+        <li class="active"><a data-toggle="tab" href="#$2">Information</a></li>
+        <li><a data-toggle="tab" href="#$3">Artefacts</a></li>
+</ul>
+<div class="tab-content">
+        <!-- {{{ Tab content open-->
+        <div class="tab-pane active padded" id="$2">
+                <p>Tab 1</p>
+        </div>
+        <!-- }}} Tab content close-->
+        <!-- {{{ Tab content open-->
+        <div class="tab-pane padded" id="$3">
+                <p>Tab 2</p>
+        </div>
+        <!-- }}} Tab content close-->
+</div>
+<!-- }}} -->
+endsnippet
+snippet htmltable "Description" !b
+<table class="table table-bordered table-striped">
+        <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Qty</th>
+                <th>Created</th>
+        </tr>
+        <? foreach ($1 as $2) { ?>
+        <tr>
+                <td style="width:15px">
+                        <div class="dropdown">
+                                  <a class="btn dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html"><b class="caret"></b><i class="icon-cog"></i></a>
+                                  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                                        <li><a href="/edit">Edit</a>
+                                        <li><a href="/delete">Delete</a>
+                                  </ul>
+                        </div>
+                </td>
+                <td><?= $2r['name'] ?></td>
+                <td><?= $2['qty'] ?></td>
+                <td><?= date('l jS \of F Y h:i:s A', $2['created']) ?></td>
+        </tr>
+        <? } ?>
+</table>
+endsnippet
+snippet widget-box "Widget Box" !b
+<!-- '{{{' Start of the main widget box-->
+<div class="widget-box">
+        <div class="widget-title">
+                <span class="icon"><i class="icon-eye-open"></i></span>
+                <h5><?=(!$new_report)? "Inspection Report #" . $report['igsman12sidd'] : "New Inspection Report" ?></h5>
+        </div>
+        <div class="widget-content">
+
+
+                <!-- Content -->
+
+        </div>
+</div>
+<!-- }}} end widget box -->
+
+endsnippet

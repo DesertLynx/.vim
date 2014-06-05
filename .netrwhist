@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
+<<<<<<< HEAD
 let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/admin/NetBeansProjects'
 let g:netrw_dirhist_2='/Users/admin/dev/meanstack/app/scripts/controllers'
@@ -9,3 +10,13 @@ let g:netrw_dirhist_6='/Users/admin/dev/SiteSync/application/views/calendar'
 let g:netrw_dirhist_7='/Users/admin/.npm'
 let g:netrw_dirhist_8='/Users/admin/dev/SiteSync/bower_components'
 let g:netrw_dirhist_9='/Users/admin/dev/archive/partials/tradeAllation'
+=======
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/ubuntu/.vim'
+let g:netrw_dirhist_2='/home/ubuntu/dev/project/app'
+let g:netrw_dirhist_3='/home/ubuntu/dev/project/app/models'
+let g:netrw_dirhist_4='/home/ubuntu/.vim'
+let g:netrw_dirhist_5='/home/ubuntu/.vim/bundle'
+let g:netrw_dirhist_6='/home/ubuntu/.vim'
+let g:netrw_dirhist_7='/home/david/.vim/.git'
+>>>>>>> 795da0459fe10a52b7039b0926656251fdcc4cba

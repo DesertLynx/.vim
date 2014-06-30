@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt-get install make curl vim git dtrx zsh wget more-utils
+sudo apt-get install make curl vim git dtrx zsh wget moreutils
 
 #install Zsh
 if [ ! -d "~/.oh-my-zsh" ]; then

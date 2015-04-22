@@ -40,3 +40,13 @@ let g:yankring_replace_n_pkey = '<leader>['
 let g:yankring_replace_n_nkey = '<leader>]'
 "\y to show the yankring
 nmap <leader>y :YRShow<cr>
+set pastetoggle=<leader>p
+
+
+" CtrlP
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](.git|node_modules)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ }
+
+let g:ctrlp_working_path_mode = 'ra'
